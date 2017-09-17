@@ -1,106 +1,106 @@
-r/catalunya/
-r/catalonia/
-r/Tarragona/
-r/es/
-r/santcugat/
-r/redditores/
-r/argentina/
-/r/ArAutos
- •  /r/Argaming
- •  /r/ArgenBitcoin
- •  /r/ArgenPics
- •  /r/ArgentinaCocina
- •  /r/ArgentinaFantastica
- •  /r/argentinamra
- •  /r/ArgENTos
- •  /r/Bariloche
- •  /r/BahiaBlanca
- •  /r/buenosaires
- •  /r/chachacha
- •  /r/Cordoba
- •  /r/Corrientes
- •  /r/empleos_AR
- •  /r/fceyn
- •  /r/fulbo
- •  /r/Mendoza
- •  /r/Merval
- •  /r/MusicaArgentina
- •  /r/Padres_Argentina
- •  /r/River_Plate
- •  /r/Rosario
- •  /r/ateismo
- •  /r/catolicismo
- •  /r/ChicasReales
- •  /r/Cinefilos
- •  /r/espanol (deprecated)
- •  /r/forwardsdemama
- •  /r/Imagenes
- •  /r/Musica
- •  /r/MusicaEnEspanol
- •  /r/programacion
- •  /r/redditores
- •  /r/sindormir
- •  /r/TeoriaMusical
- •  /r/traduccion
- •  /r/Vinilistas
- •  /m/spanish_speaking
-  • r/argentina
- •  r/bolivia
- •  r/brasil
- •  r/chile
- •  r/colombia
- •  r/costa_rica
- •  r/cuba
- •  r/dominican
- •  r/ecuador
- •  r/elsalvador
- •  r/es
- •  r/guatemala
- •  r/honduras
- •  r/mexico
- •  r/nicaragua
- •  r/panama
- •  r/paraguay
- •  r/peru
- •  r/puertorico
- •  r/spain
- •  r/uruguay
- •  r/venezuela
- •  r/LatinoAmerica
- •  r/LatinAmerica
- •  r/redditores
- •  r/Cuba
- •  r/Haiti
- •  r/PuertoRico
- •  r/Merengue
- •  r/SantoDomingo
- •  r/Cibao
- •  r/PuntaCana
- •  r/PuertoPlata
- •  r/Samana
- •r/Espana/
-r/Cinefilos
-r/Psicoesp/
-r/Santiago/
-r/LaRoja/
-r/ChilENTs/
-r/LGBTes/
-r/memexico/
-r/vzla/
-r/DistritoFederal/
-r/Oaxaca/
-r/Guadalajara/
-r/Mexicali/
-r/Monterrey/
-/tijuana/
-r/ensenada/
-/r/Devmexico/
-/r/animalesdeconsejo/
-/r/ateosmexicanos/
-r/fotosmexico
-r/futbolmx
-r/memexico
-r/mexicocirclejerk
-r/videojuego
-r/TechoBlanco
-r/MexiJobs
+catalunya
+catalonia
+Tarragona
+es
+santcugat
+redditores
+argentina
+ArAutos
+Argaming
+ArgenBitcoin
+ArgenPics
+ArgentinaCocina
+ArgentinaFantastica
+argentinamra
+ArgENTos
+Bariloche
+BahiaBlanca
+buenosaires
+chachacha
+Cordoba
+Corrientes
+empleos_AR
+fceyn
+fulbo
+Mendoza
+Merval
+MusicaArgentina
+Padres_Argentina
+River_Plate
+Rosario
+ateismo
+catolicismo
+ChicasReales
+Cinefilos
+espanol
+forwardsdemama
+Imagenes
+Musica
+MusicaEnEspanol
+programacion
+redditores
+sindormir
+TeoriaMusical
+traduccion
+Vinilistas
+mspanish_speaking
+argentina
+bolivia
+brasil
+chile
+colombia
+costa_rica
+cuba
+dominican
+ecuador
+elsalvador
+es
+guatemala
+honduras
+mexico
+nicaragua
+panama
+paraguay
+peru
+puertorico
+spain
+uruguay
+venezuela
+LatinoAmerica
+LatinAmerica
+redditores
+Cuba
+Haiti
+PuertoRico
+Merengue
+SantoDomingo
+Cibao
+PuntaCana
+PuertoPlata
+Samana
+Espana
+Cinefilos
+Psicoesp
+Santiago
+LaRoja
+ChilENTs
+LGBTes
+memexico
+vzla
+DistritoFederal
+Oaxaca
+Guadalajara
+Mexicali
+Monterrey
+tijuana
+ensenada
+Devmexico
+animalesdeconsejo
+ateosmexicanos
+fotosmexico
+futbolmx
+memexico
+mexicocirclejerk
+videojuego
+TechoBlanco
+MexiJobs
