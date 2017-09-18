@@ -1,5 +1,8 @@
 import praw,sys,time
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 ofile = open("log.xml", "w")
 
 def main():
