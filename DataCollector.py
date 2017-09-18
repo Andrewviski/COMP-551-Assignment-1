@@ -1,6 +1,5 @@
 import praw,sys,time
 
-reload(sys)
 sys.setdefaultencoding('utf-8')
 
 ofile = open("log.xml", "w")
@@ -45,28 +44,29 @@ def parse_replies(comment,users,uid):
                 parse_replies(reply2,users,uid)
 
 def DFS(subreddit, filter_set):
-     for submission in subreddit:
-        if is_correct_language(submission.title, filter_set):
-            print("["+submission.title+"]: ( url: "+submission.url+" ) {id: "+submission.id+" }")
-            ofile.write("<dialog>")
-            submission.comments.replace_more(limit=0)
-            for comment in submission.comments:
-                ofile.write("<s>")
-                users={}
-                if comment.author is not None:
-                    users[comment.author.name]=0
-                    ofile.write("<utt uid=\""+str(users[comment.author.name])+"\">")
-                    ofile.write(comment.body)
-                    ofile.write("</utt>")
-                parse_replies(comment,users,1)
-                ofile.write("</s>")
-            ofile.write("</dialog>")
+        for submission in subreddit:
+            if is_correct_language(submission.title, filter_set):
+                print("["+submission.title+"]: ( url: "+submission.url+" ) {id: "+submission.id+" }")
+                ofile.write("<dialog>")
+                submission.comments.replace_more(limit=0)
+                for comment in submission.comments:
+                    ofile.write("<s>")
+                    users={}
+                    if comment.author is not None:
+                        users[comment.author.name]=0
+                        ofile.write("<utt uid=\""+str(users[comment.author.name])+"\">")
+                        ofile.write(comment.body)
+                        ofile.write("</utt>")
+                    parse_replies(comment,users,1)
+                    ofile.write("</s>")
+                ofile.write("</dialog>")
 
 def is_correct_language(submission_words,filter_set):
     for word in submission_words:
         if word in filter_set:
-            return false
+            return False
     return True
 
 if __name__ == "__main__":
     main()
+    
