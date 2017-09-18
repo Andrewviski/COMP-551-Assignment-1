@@ -1,4 +1,5 @@
 import praw
+import xml.emtree.ElementTree as ET
 
 def main():
     # obtain a reddit instance
@@ -9,12 +10,11 @@ def main():
                         password='comp551')
 
     '''
-    with open("SpanishSubreddits.txt") as file:
+    with open('SpanishSubreddits.txt', 'r') as file:
         for line in file:
             parse(line)
     file.close()
-    '''
-    DFS("catalunya")
+'''
 
 def DFS(subreddit):
     for submission in reddit.subreddit(subreddit).top('all'):
@@ -31,7 +31,10 @@ def DFS(subreddit):
 
 #placeholder
 def add_to_XML(comment):
-    return None
+    tree = ET.ElementTree()
+
+def save_XML(tree):
+    tree.write('output.xml')
 
 if __name__ == "__main__":
     main()
