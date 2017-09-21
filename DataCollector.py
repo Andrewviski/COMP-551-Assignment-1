@@ -1,7 +1,5 @@
 import praw,sys,time
 
-sys.setdefaultencoding('utf-8')
-
 ofile = open("log.xml", "w")
 
 def main():
@@ -17,7 +15,7 @@ def main():
     english_file.close()
     common_submission_words = set(english_submission_words[:20]) #0-100
     
-    subreddit_file =open("SpanishSubreddits.txt","r")
+    subreddit_file =open("test.txt","r")
     for line in subreddit_file :
         line=line.replace('\n',"")
 
@@ -26,7 +24,8 @@ def main():
         DFS(subreddit, common_submission_words)
         print("Done Extracting " + line +"!\n\n")
         print('-----------------------------=============================================-----------------------------')
-        subreddit_file.close()
+    subreddit_file.close()
+    ofile.close()
 
 def parse_replies(comment,users,uid):
     for reply in comment.replies:
