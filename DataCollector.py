@@ -18,7 +18,7 @@ def main():
     for line in subreddit_file :
         line=line.replace('\n',"")
 
-        subreddit=reddit.subreddit(line).top(limit=1)
+        subreddit=reddit.subreddit(line).top('all')
         print("Extracting " + line + "(" + subreddit.url + ")" + " Subreddit...")
         DFS(subreddit, common_submission_words)
         print("Done Extracting " + line +"!\n\n")
