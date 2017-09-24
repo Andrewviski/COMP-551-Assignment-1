@@ -3,7 +3,6 @@ import praw,sys,time
 ofile = open("log.xml", "w")
 
 def main():
-
     reddit = praw.Reddit(client_id='OlfGGYW2I06cVQ',
                         client_secret='FneP5eGqBL1x3pV0GifzbieYy_E',
                         user_agent='my user agent',
@@ -28,35 +27,28 @@ def main():
     ofile.close()
 
 def parse_replies(comment,users,uid):
-    for reply in comment.replies:
-        if (reply.author is not None) and (not reply.author.name in users):
-            users[reply.author.name]=uid
+    if comment.author is not None:
+        if not comment.author.name in users:
+            users[comment.author.name] = uid
             uid+=1
+        ofile.write("<utt uid=\"" + str(users[comment.author.name]) + "\">")
+        ofile.write(comment.body)
+        ofile.write("</utt>")
 
-        if reply.author is not None:
-            ofile.write("<utt uid=\"" + str(users[reply.author.name]) + "\">")
-            ofile.write(reply.body)
-            ofile.write("</utt>")
+    comment.replies.replace_more(limit=2)
+    for reply in comment.replies:
+        parse_replies(reply, users, uid)
 
-            reply.replies.replace_more(limit=0)
-            for reply2 in reply.replies:
-                parse_replies(reply2,users,uid)
 
 def DFS(subreddit, filter_set):
         for submission in subreddit:
             if is_correct_language(submission.title, filter_set):
                 print("["+submission.title+"]: ( url: "+submission.url+" ) {id: "+submission.id+" }")
                 ofile.write("<dialog>")
-                submission.comments.replace_more(limit=0)
+                submission.comments.replace_more(limit=2)
                 for comment in submission.comments:
                     ofile.write("<s>")
-                    users={}
-                    if comment.author is not None:
-                        users[comment.author.name]=0
-                        ofile.write("<utt uid=\""+str(users[comment.author.name])+"\">")
-                        ofile.write(comment.body)
-                        ofile.write("</utt>")
-                    parse_replies(comment,users,1)
+                    parse_replies(comment,{},0)
                     ofile.write("</s>")
                 ofile.write("</dialog>")
 
