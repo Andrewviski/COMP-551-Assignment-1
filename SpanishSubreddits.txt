@@ -1,5 +1,4 @@
 catalunya
-catalonia
 Tarragona
 es
 santcugat
@@ -46,7 +45,6 @@ Vinilistas
 mspanish_speaking
 argentina
 bolivia
-brasil
 chile
 colombia
 costa_rica
@@ -63,7 +61,6 @@ panama
 paraguay
 peru
 puertorico
-spain
 uruguay
 venezuela
 LatinoAmerica

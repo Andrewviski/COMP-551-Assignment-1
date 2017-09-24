@@ -1,8 +1,12 @@
-import praw,sys,time
+import praw,sys,time, re
 
 ofile = open("log.xml", "w")
 
+def sanitise(mystring):
+    return re.sub("[<>&\'\"]", "", mystring)
+
 def main():
+    ofile.write("<dialogs>")
     reddit = praw.Reddit(client_id='OlfGGYW2I06cVQ',
                         client_secret='FneP5eGqBL1x3pV0GifzbieYy_E',
                         user_agent='my user agent',
@@ -24,6 +28,7 @@ def main():
         print("Done Extracting " + line +"!\n\n")
         print('-----------------------------=============================================-----------------------------')
     subreddit_file.close()
+    ofile.write("</dialogs>")
     ofile.close()
 
 def parse_replies(comment,users,uid):
@@ -32,7 +37,7 @@ def parse_replies(comment,users,uid):
             users[comment.author.name] = uid
             uid+=1
         ofile.write("<utt uid=\"" + str(users[comment.author.name]) + "\">")
-        ofile.write(comment.body)
+        ofile.write(sanitise(comment.body))
         ofile.write("</utt>")
 
     comment.replies.replace_more(limit=2)
