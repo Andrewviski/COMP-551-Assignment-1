@@ -18,8 +18,8 @@ def main():
     english_file.close()
     common_submission_words = set(english_submission_words[:20]) #0-100
     
-    subreddit_file =open("test.txt","r")
-    for line in subreddit_file :
+    subreddit_file =open("SpanishSubreddits.txt","r")
+    for line in subreddit_file:
         line=line.replace('\n',"")
 
         subreddit=reddit.subreddit(line).top('all')

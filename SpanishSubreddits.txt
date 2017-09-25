@@ -10,7 +10,6 @@ ArgenBitcoin
 ArgenPics
 ArgentinaCocina
 ArgentinaFantastica
-argentinamra
 ArgENTos
 Bariloche
 BahiaBlanca
@@ -39,10 +38,8 @@ MusicaEnEspanol
 programacion
 redditores
 sindormir
-TeoriaMusical
 traduccion
 Vinilistas
-mspanish_speaking
 argentina
 bolivia
 chile
